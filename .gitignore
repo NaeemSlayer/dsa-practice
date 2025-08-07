@@ -1,1 +1,21 @@
 .vscode/
+# Dependency folders
+node_modules/
+
+# Env files
+.env
+
+# Build output
+dist/
+build/
+
+# VS Code settings (optional)
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
