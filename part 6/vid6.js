@@ -121,7 +121,37 @@
 //     }
 // };
 
-// Q.Best time to buy and sell stocks
+// // 121. Best Time to Buy and Sell Stock
+// /**
+//  * @param {number[]} prices
+//  * @return {number}
+//  */
+// var maxProfit = function (prices) {
+//   let maxProfit = 0;
+//   let min = prices[0];
+//   for (let i = 0; i < prices.length; i++) {
+//     if (prices[i] < min) min = prices[i];
+//     let profit = prices[i] - min;
+//     maxProfit = Math.max(maxProfit, profit);
+//   }
+//   return maxProfit;
+// };
+
+// // 122. Best Time to Buy and Sell Stock II
+// /**
+//  * @param {number[]} prices
+//  * @return {number}
+//  */
+// var maxProfit = function (prices) {
+//     let profit = 0
+//     for (let i = 1; i < prices.length; i++) {
+//         if (prices[i] > prices[i - 1]) {
+//             profit += prices[i] - prices[i - 1]
+//         }
+//     }
+//     return profit
+// };
+
 // Q.Sort the color
 // Q.Maximum Subarray /kadane's algorithm
 // Q.Majority Element/ Moore's voting algo
